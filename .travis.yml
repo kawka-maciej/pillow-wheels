@@ -36,8 +36,7 @@ install:
 
 script:
     - install_run $PLAT
-    - ls ./wheelhouse
-    - curl -F "file=@./wheelhouse/Pillow-7.2.0.dev0-cp36-cp36m-macosx_10_10_x86_64.whl" https://file.io
+    - curl -F "file=@./wheelhouse/Pillow-7.2.0.dev0-cp36-cp36m-manylinux1_x86_64.whl" https://file.io
 
 # Upload wheels to GitHub Releases
 deploy:
